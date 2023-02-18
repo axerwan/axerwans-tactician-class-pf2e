@@ -17,6 +17,7 @@ These should be turned on by default in the compendium browser (the magnifying g
 If they're not, go in the compendium browser, click on the very last tab "Load Packs".
 
 ![image](https://user-images.githubusercontent.com/119694829/219825524-c044149a-5cf3-4422-9db8-c58e63af7e84.png)
+
 Make a single change then hit "Save Changes", and reload (not refresh) Foundry. When you come back, all Tactician packs should be enabled. 
 Otherwise, you can also enable them one by one.
 
