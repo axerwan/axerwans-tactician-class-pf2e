@@ -1,5 +1,5 @@
 # Axerwan's Tactician Class
-A module for Foundry VTT which includes support for the Tactician, a homebrew class for Pathfinder Second Edition made by me.
+A module for Foundry VTT which includes support for the Tactician, my homebrew class for the second edition of Pathfinder.
 
 ## Installation
 In Foundry setup, click on the Install Module button and slap the following path in the Manifest URL!
