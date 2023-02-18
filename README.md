@@ -4,7 +4,7 @@ A module for Foundry VTT which includes support for the Tactician, my homebrew c
 ## Installation
 In Foundry setup, click on the Install Module button and slap the following path in the Manifest URL!
 
-<code>https://raw.githubusercontent.com/axerwans-tactician-class-pf2e/master/module.json</code>
+<code>https://raw.githubusercontent.com/axerwan/axerwans-tactician-class-pf2e/main/module.json</code>
 
 ## Usage
 ### Compendiums
