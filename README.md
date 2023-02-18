@@ -23,10 +23,10 @@ Make a single change then hit "Save Changes", and reload (not refresh) Foundry. 
 Otherwise, you can also enable them one by one.
 
 #### Important Note
-Some abilities from vanilla PF2e like Natural Ambition, which let you pick class feats, won't have any choice by default for a tactician, due to how their Rule Elements have been made. You'll have to browse through the compendium browser or directly in the Tactician Feats compendium and drag a valid feat onto the "Homebrew Item" box.
+Due to how their Rule Elements have been made, some abilities from vanilla PF2e like Natural Ambition, which let you pick class feats, won't have any choice by default for a tactician. You'll have to browse through the compendium browser or directly in the Tactician Feats compendium and drag a valid feat onto the "Homebrew Item" box.
 
 ![image](https://user-images.githubusercontent.com/119694829/219826326-09230aa4-9ad5-421c-9425-72a50b5736a8.png)
 
-### Special Thanks
+## Special Thanks
 Thanks to MrVauxs, websterguy, nikolaj-a, Tikael, TMun, and stwlam for bearing with my lack of brain cells and answering to all of my questions.
 Big thanks to MrVauxs for making the script which enables the compendium packs to be automatically loaded by Foundry.
