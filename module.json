@@ -1,7 +1,7 @@
 {
   "id": "axerwans-tactician-class-pf2e",
   "title": "Axerwan's Tactician Class (PF2e)",
-  "description": "An example module.",
+  "description": "A module for Foundry VTT which includes support for the Tactician, my homebrew class for the second edition of Pathfinder.",
   "url": "https://github.com/axerwan/axerwans-tactician-class-pf2e",
 	"manifest": "https://raw.githubusercontent.com/axerwans-tactician-class-pf2e/master/module.json",
 	"download": "https://github.com/axerwans-tactician-class-pf2e/archive/refs/heads/main.zip",
