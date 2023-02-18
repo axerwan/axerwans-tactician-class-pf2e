@@ -22,7 +22,7 @@ If they're not, go in the compendium browser, click on the very last tab "Load P
 Make a single change then hit "Save Changes", and reload (not refresh) Foundry. When you come back, all Tactician packs should be enabled. 
 Otherwise, you can also enable them one by one.
 
-#### Important Note
+#### Known Issues
 Due to how their Rule Elements have been made, some abilities from vanilla PF2e like Natural Ambition, which let you pick class feats, won't have any choice by default for a tactician. You'll have to browse through the compendium browser or directly in the Tactician Feats compendium and drag a valid feat onto the "Homebrew Item" box.
 
 ![image](https://user-images.githubusercontent.com/119694829/219826326-09230aa4-9ad5-421c-9425-72a50b5736a8.png)
