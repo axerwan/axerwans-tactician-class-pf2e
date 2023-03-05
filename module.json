@@ -10,6 +10,7 @@
     "pf2e-homebrew": {
       "baseWeapons": {
         "fierce-flag": "Fierce Flag",
+        "fencing-flag": "Fencing Flag",
         "heavy-flag": "Heavy Flag",
         "graceful-flag": "Graceful Flag"
       },
@@ -20,7 +21,7 @@
         },
         "instruction": {
           "label": "Instruction",
-          "description": "Abilities with this trait allow you to quickly advise a willing ally who you're aware of, unless mentioned otherwise. Instructions can either be vocal or a gesture.\n\nIf you use a vocal instruction, it gains the auditory and linguistic traits. If you use a gesture, it gains the manipulate and visual traits. If an instruction affects multiple allies, you choose the bonus from your Paradigm for each one.\n\nWhen you give an instruction to a creature already benefitting from one of your instructions, any ongoing effect from your previous one end immediately, including the bonus from your paradigm."
+          "description": "Abilities with this trait allow you to quickly advise a willing ally who you're aware of, unless mentioned otherwise. Instructions can either be vocal or a gesture.\n\nIf you use a vocal instruction, it gains the auditory and linguistic traits. If you use a gesture, it gains the manipulate and visual traits. If an instruction affects multiple allies, you choose the bonus from your Paradigm for each one.\n\nWhen you give an instruction to a creature already benefiting from one of your instructions, any ongoing effect from your previous one end immediately, including the bonus from your paradigm."
         },
         "tactician": {
           "label": "Tactician",
@@ -30,7 +31,7 @@
     }
   }
 },
-  "version": "1.0",
+  "version": "1.1",
   "authors": [
     {"name": "Axerwan"}
   ],
