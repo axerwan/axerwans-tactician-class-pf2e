@@ -3,116 +3,164 @@
   "title": "Axerwan's Tactician Class (PF2e)",
   "description": "A module for Foundry VTT which includes support for the Tactician, my homebrew class for the second edition of Pathfinder.",
   "url": "https://github.com/axerwan/axerwans-tactician-class-pf2e",
-	"manifest": "https://raw.githubusercontent.com/axerwan/axerwans-tactician-class-pf2e/main/module.json",
-	"download": "https://github.com/axerwans-tactician-class-pf2e/archive/refs/heads/main.zip",
+  "manifest": "https://raw.githubusercontent.com/axerwan/axerwans-tactician-class-pf2e/main/module.json",
+  "download": "https://github.com/axerwans-tactician-class-pf2e/archive/refs/heads/main.zip",
   "flags": {
-  "axerwans-tactician-class-pf2e": {
-    "pf2e-homebrew": {
-      "baseWeapons": {
-        "fierce-flag": "Fierce Flag",
-        "fencing-flag": "Fencing Flag",
-        "heavy-flag": "Heavy Flag",
-        "graceful-flag": "Graceful Flag"
-      },
-      "featTraits": {
-        "gambit": {
-          "label": "Gambit",
-          "description": "Some of your actions can be made more efficient by bursts of insight: gambits. If an ability has a gambit entry, you can add the gambit trait to the action in order to use its enhanced effects, but attempt a DC 17 Flat Check  after doing so. On a failure, you are unable to anticipate the flow of the fight any longer and can't use gambit actions.\n\nYou can spend 10 minutes as an exploration activity to regain your focus, at which point you can use gambit actions again. Alternatively, when you score a critical hit with a Strike benefiting from Inextricable Strike, a new idea sparks in your mind and you can use gambit actions again.\n\nContrarily to normal instructions, gambits are easier to understand and manage. The ongoing effects of an instruction with the gambit trait don't end for an ally when you give them a new instruction, nor do they end effects from a previous instruction. If an action can gain multiple gambit benefits, you only pick one."
+    "axerwans-tactician-class-pf2e": {
+      "pf2e-homebrew": {
+        "baseWeapons": {
+          "fierce-flag": "Fierce Flag",
+          "fencing-flag": "Fencing Flag",
+          "heavy-flag": "Heavy Flag",
+          "graceful-flag": "Graceful Flag"
         },
-        "instruction": {
-          "label": "Instruction",
-          "description": "Abilities with this trait allow you to quickly advise a willing ally who you're aware of, unless mentioned otherwise. Instructions can either be vocal or a gesture.\n\nIf you use a vocal instruction, it gains the auditory and linguistic traits. If you use a gesture, it gains the manipulate and visual traits. If an instruction affects multiple allies, you choose the bonus from your Paradigm for each one.\n\nWhen you give an instruction to a creature already benefiting from one of your instructions, any ongoing effect from your previous one end immediately, including the bonus from your paradigm."
-        },
-        "tactician": {
-          "label": "Tactician",
-          "description": "This indicates abilities from the tactician class."
+        "featTraits": {
+          "gambit": {
+            "label": "Gambit",
+            "description": "Some of your actions can be made more efficient by bursts of insight: gambits. If an ability has a gambit entry, you can add the gambit trait to the action in order to use its enhanced effects, but attempt a DC 17 Flat Check  after doing so. On a failure, you are unable to anticipate the flow of the fight any longer and can't use gambit actions.\n\nYou can spend 10 minutes as an exploration activity to regain your focus, at which point you can use gambit actions again. Alternatively, when you score a critical hit with a Strike benefiting from Inextricable Strike, a new idea sparks in your mind and you can use gambit actions again.\n\nContrarily to normal instructions, gambits are easier to understand and manage. The ongoing effects of an instruction with the gambit trait don't end for an ally when you give them a new instruction, nor do they end effects from a previous instruction. If an action can gain multiple gambit benefits, you only pick one."
+          },
+          "instruction": {
+            "label": "Instruction",
+            "description": "Abilities with this trait allow you to quickly advise a willing ally who you're aware of, unless mentioned otherwise. Instructions can either be vocal or a gesture.\n\nIf you use a vocal instruction, it gains the auditory and linguistic traits. If you use a gesture, it gains the manipulate and visual traits. If an instruction affects multiple allies, you choose the bonus from your Paradigm for each one.\n\nWhen you give an instruction to a creature already benefiting from one of your instructions, any ongoing effect from your previous one end immediately, including the bonus from your paradigm."
+          },
+          "tactician": {
+            "label": "Tactician",
+            "description": "This indicates abilities from the tactician class."
+          }
         }
       }
     }
-  }
-},
+  },
   "version": "1.1",
   "authors": [
-    {"name": "Axerwan"}
+    {
+      "name": "Axerwan",
+      "flags": {}
+    }
   ],
   "compatibility": {
     "minimum": "10.291",
     "verified": "10.291"
   },
   "relationships": {
-    "systems": [{
-      "id": "pf2e",
-      "type": "system",
-      "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
-      "compatibility": {
-        "minimum": "4.7.4"
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system",
+        "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+        "compatibility": {
+          "minimum": "4.7.4"
+        }
       }
-    }]
+    ]
   },
   "scripts": [
-  "./scripts/compendiumBrowser.js"
-	],
-  "packs": [{
+    "scripts/compendiumBrowser.js"
+  ],
+  "packFolders": [
+  {
+    "name": "Tactician Class",
+    "sorting": "m",
+    "packs": [
+      "tactician-class",
+      "tactician-class-feats",
+      "tactician-class-features",
+      "tactician-actions",
+      "tactician-effects",
+      "tactician-equipment",
+      "tactician-weapons"
+    ]
+  },
+  {
+    "name": "Tactician Archetype",
+    "sorting": "m",
+    "packs": [
+      "tactician-archetype",
+      "tactician-archetype-feats"
+    ]
+  }
+],
+  "packs": [
+    {
       "label": "Tactician Actions",
       "type": "Item",
       "name": "tactician-actions",
-      "path": "./packs/tactician-actions.db",
+      "path": "packs/tactician-actions.db",
       "system": "pf2e",
-      "package": "axerwans-tactician-class-pf2e",
-      "private": false
+      "private": false,
+      "flags": {}
     },
-	{
+    {
+      "label": "Tactician Archetype Feats",
+      "type": "Item",
+      "name": "tactician-archetype-feats",
+      "path": "packs/tactician-archetype-feats.db",
+      "system": "pf2e",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "label": "Tactician Archetype",
+      "type": "JournalEntry",
+      "name": "tactician-archetype",
+      "path": "packs/tactician-archetype.db",
+      "system": "pf2e",
+      "private": false,
+      "flags": {}
+    },
+    {
       "label": "Tactician Class",
       "type": "Item",
       "name": "tactician-class",
-      "path": "./packs/tactician-class.db",
+      "path": "packs/tactician-class.db",
       "system": "pf2e",
-      "package": "axerwans-tactician-class-pf2e",
-      "private": false
+      "private": false,
+      "flags": {}
     },
     {
       "label": "Tactician Class Features",
       "type": "Item",
       "name": "tactician-features",
-      "path": "./packs/tactician-features.db",
+      "path": "packs/tactician-features.db",
       "system": "pf2e",
-      "package": "axerwans-tactician-class-pf2e",
-      "private": false
+      "private": false,
+      "flags": {}
     },
-	{
+    {
       "label": "Tactician Feats",
       "type": "Item",
       "name": "tactician-feats",
-      "path": "./packs/tactician-feats.db",
+      "path": "packs/tactician-feats.db",
       "system": "pf2e",
-      "package": "axerwans-tactician-class-pf2e",
-      "private": false
+      "private": false,
+      "flags": {}
     },
     {
       "label": "Tactician Effects",
       "type": "Item",
       "name": "tactician-effects",
-      "path": "./packs/tactician-effects.db",
+      "path": "packs/tactician-effects.db",
       "system": "pf2e",
-      "package": "axerwans-tactician-class-pf2e",
-      "private": false
+      "private": false,
+      "flags": {}
     },
     {
       "label": "Tactician Equipment",
       "type": "Item",
       "name": "tactician-equipment",
-      "path": "./packs/tactician-equipment.db",
+      "path": "packs/tactician-equipment.db",
       "system": "pf2e",
-      "package": "axerwans-tactician-class-pf2e",
-      "private": false
+      "private": false,
+      "flags": {}
     },
     {
       "label": "Tactician Weapons",
       "type": "Item",
       "name": "tactician-weapons",
-      "path": "./packs/tactician-weapons.db",
+      "path": "packs/tactician-weapons.db",
       "system": "pf2e",
-      "package": "axerwans-tactician-class-pf2e",
-      "private": false
-    }]
+      "private": false,
+      "flags": {}
+    }
+  ]
 }
